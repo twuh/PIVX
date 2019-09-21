@@ -1,0 +1,37 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/worx_bg.qm</file>
+        <file alias="ca">locale/worx_ca.qm</file>
+        <file alias="cs">locale/worx_cs.qm</file>
+        <file alias="da">locale/worx_da.qm</file>
+        <file alias="de">locale/worx_de.qm</file>
+        <file alias="en">locale/worx_en.qm</file>
+        <file alias="en_GB">locale/worx_en_GB.qm</file>
+        <file alias="en_US">locale/worx_en_US.qm</file>
+        <file alias="eo">locale/worx_eo.qm</file>
+        <file alias="es">locale/worx_es.qm</file>
+        <file alias="es_ES">locale/worx_es_ES.qm</file>
+        <file alias="fi">locale/worx_fi.qm</file>
+        <file alias="fr_FR">locale/worx_fr_FR.qm</file>
+        <file alias="hi_IN">locale/worx_hi_IN.qm</file>
+        <file alias="hr">locale/worx_hr.qm</file>
+        <file alias="hr_HR">locale/worx_hr_HR.qm</file>
+        <file alias="it">locale/worx_it.qm</file>
+        <file alias="ja">locale/worx_ja.qm</file>
+        <file alias="ko_KR">locale/worx_ko_KR.qm</file>
+        <file alias="lt_LT">locale/worx_lt_LT.qm</file>
+        <file alias="nl">locale/worx_nl.qm</file>
+        <file alias="pl">locale/worx_pl.qm</file>
+        <file alias="pt">locale/worx_pt.qm</file>
+        <file alias="pt_BR">locale/worx_pt_BR.qm</file>
+        <file alias="ro_RO">locale/worx_ro_RO.qm</file>
+        <file alias="ru">locale/worx_ru.qm</file>
+        <file alias="sk">locale/worx_sk.qm</file>
+        <file alias="sv">locale/worx_sv.qm</file>
+        <file alias="tr">locale/worx_tr.qm</file>
+        <file alias="uk">locale/worx_uk.qm</file>
+        <file alias="vi">locale/worx_vi.qm</file>
+        <file alias="zh_CN">locale/worx_zh_CN.qm</file>
+        <file alias="zh_TW">locale/worx_zh_TW.qm</file>
+    </qresource>
+</RCC>

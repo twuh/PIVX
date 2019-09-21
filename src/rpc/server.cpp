@@ -265,11 +265,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop WORX server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "WORX server stopping";
 }
 
 
@@ -362,35 +362,35 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true,  true,  false  },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
-        /* PIVX features */
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* WORX features */
+        {"worx", "listmasternodes", &listmasternodes, true, true, false},
+        {"worx", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"worx", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"worx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"worx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"worx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"worx", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"worx", "masternodedebug", &masternodedebug, true, true, false},
+        {"worx", "startmasternode", &startmasternode, true, true, false},
+        {"worx", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"worx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"worx", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"worx", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"worx", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"worx", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"worx", "preparebudget", &preparebudget, true, true, false},
+        {"worx", "submitbudget", &submitbudget, true, true, false},
+        {"worx", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"worx", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"worx", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"worx", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"worx", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"worx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"worx", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"worx", "checkbudgets", &checkbudgets, true, true, false},
+        {"worx", "mnsync", &mnsync, true, true, false},
+        {"worx", "spork", &spork, true, true, false},
+        {"worx", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -461,11 +461,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzpivseed", &getzpivseed, false, false, true},
-        {"zerocoin", "setzpivseed", &setzpivseed, false, false, true},
+        {"zerocoin", "getzworxseed", &getzworxseed, false, false, true},
+        {"zerocoin", "setzworxseed", &setzworxseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzpiv", &searchdzpiv, false, false, true},
-        {"zerocoin", "dzpivstate", &dzpivstate, false, false, true},
+        {"zerocoin", "searchdzworx", &searchdzworx, false, false, true},
+        {"zerocoin", "dzworxstate", &dzworxstate, false, false, true},
         {"zerocoin", "clearspendcache", &clearspendcache, false, false, true}
 
 #endif // ENABLE_WALLET
@@ -630,7 +630,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> worx-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

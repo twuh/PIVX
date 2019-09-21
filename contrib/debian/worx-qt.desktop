@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=WORX Core
+Comment=WORX P2P Cryptocurrency
+Comment[fr]=WORX, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=WORX, eşten eşe kriptografik sanal para birimi
+Exec=worx-qt %u
+Terminal=false
+Type=Application
+Icon=worx128
+MimeType=x-scheme-handler/worx;
+Categories=Office;Finance;
+StartupWMClass=Worxx-qt

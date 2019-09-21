@@ -1,0 +1,81 @@
+policy_module(worx, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type worx_t;
+type worx_exec_t;
+init_daemon_domain(worx_t, worx_exec_t)
+
+permissive worx_t;
+
+type worx_initrc_exec_t;
+init_script_file(worx_initrc_exec_t)
+
+type worx_conf_t;
+files_type(worx_conf_t)
+
+type worx_var_lib_t;
+files_type(worx_var_lib_t)
+
+type worx_var_run_t;
+files_type(worx_var_run_t)
+
+type worx_port_t;
+corenet_port(worx_port_t)
+
+########################################
+#
+# worx local policy
+#
+allow worx_t self:process { fork };
+
+allow worx_t self:fifo_file rw_fifo_file_perms;
+allow worx_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(worx_t, worx_conf_t, worx_conf_t)
+manage_files_pattern(worx_t, worx_conf_t, worx_conf_t)
+
+manage_dirs_pattern(worx_t, worx_var_lib_t, worx_var_lib_t)
+manage_files_pattern(worx_t, worx_var_lib_t, worx_var_lib_t)
+files_var_lib_filetrans(worx_t, worx_var_lib_t, { dir file })
+
+manage_dirs_pattern(worx_t, worx_var_run_t, worx_var_run_t)
+manage_files_pattern(worx_t, worx_var_run_t, worx_var_run_t)
+
+sysnet_dns_name_resolve(worx_t)
+corenet_all_recvfrom_unlabeled(worx_t)
+
+allow worx_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(worx_t)
+corenet_tcp_sendrecv_generic_node(worx_t)
+corenet_tcp_sendrecv_all_ports(worx_t)
+corenet_tcp_bind_generic_node(worx_t)
+
+gen_require(`
+    type worx_port_t;
+')
+allow worx_t worx_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type worx_port_t;
+')
+allow worx_t worx_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(worx_t)
+
+files_read_etc_files(worx_t)
+
+miscfiles_read_localization(worx_t)
+
+sysnet_dns_name_resolve(worx_t)
+
+allow worx_t worx_exec_t:file execute_no_trans;
+allow worx_t self:process setsched;
+corecmd_exec_ls(worx_t)
+corenet_tcp_connect_http_port(worx_t)
+dev_read_urand(worx_t)
+fs_getattr_xattr_fs(worx_t)
+kernel_read_system_state(worx_t)

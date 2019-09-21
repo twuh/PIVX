@@ -1,0 +1,8 @@
+/usr/bin/worx-cli		--	gen_context(system_u:object_r:worx_exec_t,s0)
+/usr/sbin/worxd		--	gen_context(system_u:object_r:worx_exec_t,s0)
+/usr/lib(64)?/worx/worxd		--	gen_context(system_u:object_r:worx_exec_t,s0)
+
+/etc/worx(/.*)?		gen_context(system_u:object_r:worx_conf_t,s0)
+/var/lib/worx(/.*)?		gen_context(system_u:object_r:worx_var_lib_t,s0)
+
+(/var)?/run/worxd(/.*)?   gen_context(system_u:object_r:worx_var_run_t,s0)

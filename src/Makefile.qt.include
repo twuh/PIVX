@@ -2,44 +2,44 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/pivx-qt
+bin_PROGRAMS += qt/worx-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# pivx qt core #
+# worx qt core #
 QT_TS = \
-  qt/locale/pivx_bg.ts \
-  qt/locale/pivx_ca.ts \
-  qt/locale/pivx_cs.ts \
-  qt/locale/pivx_da.ts \
-  qt/locale/pivx_de.ts \
-  qt/locale/pivx_en.ts \
-  qt/locale/pivx_en_GB.ts \
-  qt/locale/pivx_en_US.ts \
-  qt/locale/pivx_eo.ts \
-  qt/locale/pivx_es.ts \
-  qt/locale/pivx_es_ES.ts \
-  qt/locale/pivx_fi.ts \
-  qt/locale/pivx_fr_FR.ts \
-  qt/locale/pivx_hi_IN.ts \
-  qt/locale/pivx_hr.ts \
-  qt/locale/pivx_hr_HR.ts \
-  qt/locale/pivx_it.ts \
-  qt/locale/pivx_ja.ts \
-  qt/locale/pivx_ko_KR.ts \
-  qt/locale/pivx_lt_LT.ts \
-  qt/locale/pivx_nl.ts \
-  qt/locale/pivx_pl.ts \
-  qt/locale/pivx_pt.ts \
-  qt/locale/pivx_pt_BR.ts \
-  qt/locale/pivx_ro_RO.ts \
-  qt/locale/pivx_ru.ts \
-  qt/locale/pivx_sk.ts \
-  qt/locale/pivx_sv.ts \
-  qt/locale/pivx_tr.ts \
-  qt/locale/pivx_uk.ts \
-  qt/locale/pivx_vi.ts \
-  qt/locale/pivx_zh_CN.ts \
-  qt/locale/pivx_zh_TW.ts
+  qt/locale/worx_bg.ts \
+  qt/locale/worx_ca.ts \
+  qt/locale/worx_cs.ts \
+  qt/locale/worx_da.ts \
+  qt/locale/worx_de.ts \
+  qt/locale/worx_en.ts \
+  qt/locale/worx_en_GB.ts \
+  qt/locale/worx_en_US.ts \
+  qt/locale/worx_eo.ts \
+  qt/locale/worx_es.ts \
+  qt/locale/worx_es_ES.ts \
+  qt/locale/worx_fi.ts \
+  qt/locale/worx_fr_FR.ts \
+  qt/locale/worx_hi_IN.ts \
+  qt/locale/worx_hr.ts \
+  qt/locale/worx_hr_HR.ts \
+  qt/locale/worx_it.ts \
+  qt/locale/worx_ja.ts \
+  qt/locale/worx_ko_KR.ts \
+  qt/locale/worx_lt_LT.ts \
+  qt/locale/worx_nl.ts \
+  qt/locale/worx_pl.ts \
+  qt/locale/worx_pt.ts \
+  qt/locale/worx_pt_BR.ts \
+  qt/locale/worx_ro_RO.ts \
+  qt/locale/worx_ru.ts \
+  qt/locale/worx_sk.ts \
+  qt/locale/worx_sv.ts \
+  qt/locale/worx_tr.ts \
+  qt/locale/worx_uk.ts \
+  qt/locale/worx_vi.ts \
+  qt/locale/worx_zh_CN.ts \
+  qt/locale/worx_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -65,56 +65,56 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/pivx/forms/loadingdialog.ui \
-  qt/forms/zpivcontroldialog.ui \
-  qt/pivx/forms/snackbar.ui \
-  qt/pivx/forms/navmenuwidget.ui \
-  qt/pivx/forms/lockunlock.ui \
-  qt/pivx/forms/expandablebutton.ui \
-  qt/pivx/forms/receivedialog.ui \
-  qt/pivx/forms/walletpassworddialog.ui \
-  qt/pivx/forms/topbar.ui \
-  qt/pivx/forms/txrow.ui \
-  qt/pivx/forms/dashboardwidget.ui \
-  qt/pivx/forms/coincontrolpivwidget.ui \
-  qt/pivx/forms/addresslabelrow.ui \
-  qt/pivx/forms/contactdropdownrow.ui \
-  qt/pivx/forms/mninfodialog.ui \
-  qt/pivx/forms/optionbutton.ui \
-  qt/pivx/forms/masternodewizarddialog.ui \
-  qt/pivx/forms/mnrow.ui \
-  qt/pivx/forms/masternodeswidget.ui \
-  qt/pivx/forms/myaddressrow.ui \
-  qt/pivx/forms/sendchangeaddressdialog.ui \
-  qt/pivx/forms/sendconfirmdialog.ui \
-  qt/pivx/forms/sendcustomfeedialog.ui \
-  qt/pivx/forms/sendchangeaddressdialog.ui \
-  qt/pivx/forms/sendmultirow.ui \
-  qt/pivx/forms/send.ui \
-  qt/pivx/forms/addnewaddressdialog.ui \
-  qt/pivx/forms/addnewcontactdialog.ui \
-  qt/pivx/forms/requestdialog.ui \
-  qt/pivx/forms/receivewidget.ui \
-  qt/pivx/forms/tooltipmenu.ui \
-  qt/pivx/forms/addresseswidget.ui \
-  qt/pivx/forms/defaultdialog.ui \
-  qt/pivx/forms/denomgenerationdialog.ui \
-  qt/pivx/forms/privacywidget.ui \
-  qt/pivx/settings/forms/settingsbackupwallet.ui \
-  qt/pivx/settings/forms/settingsbittoolwidget.ui \
-  qt/pivx/settings/forms/settingsconsolewidget.ui \
-  qt/pivx/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/pivx/settings/forms/settingsfaqwidget.ui \
-  qt/pivx/settings/forms/settingsinformationwidget.ui \
-  qt/pivx/settings/forms/settingsmainoptionswidget.ui \
-  qt/pivx/settings/forms/settingsmultisenddialog.ui \
-  qt/pivx/settings/forms/settingsmultisendwidget.ui \
-  qt/pivx/settings/forms/settingssignmessagewidgets.ui \
-  qt/pivx/settings/forms/settingswalletoptionswidget.ui \
-  qt/pivx/settings/forms/settingswalletrepairwidget.ui \
-  qt/pivx/settings/forms/settingswidget.ui \
-  qt/pivx/forms/welcomecontentwidget.ui \
-  qt/pivx/forms/splash.ui
+  qt/worx/forms/loadingdialog.ui \
+  qt/forms/zworxcontroldialog.ui \
+  qt/worx/forms/snackbar.ui \
+  qt/worx/forms/navmenuwidget.ui \
+  qt/worx/forms/lockunlock.ui \
+  qt/worx/forms/expandablebutton.ui \
+  qt/worx/forms/receivedialog.ui \
+  qt/worx/forms/walletpassworddialog.ui \
+  qt/worx/forms/topbar.ui \
+  qt/worx/forms/txrow.ui \
+  qt/worx/forms/dashboardwidget.ui \
+  qt/worx/forms/coincontrolworxwidget.ui \
+  qt/worx/forms/addresslabelrow.ui \
+  qt/worx/forms/contactdropdownrow.ui \
+  qt/worx/forms/mninfodialog.ui \
+  qt/worx/forms/optionbutton.ui \
+  qt/worx/forms/masternodewizarddialog.ui \
+  qt/worx/forms/mnrow.ui \
+  qt/worx/forms/masternodeswidget.ui \
+  qt/worx/forms/myaddressrow.ui \
+  qt/worx/forms/sendchangeaddressdialog.ui \
+  qt/worx/forms/sendconfirmdialog.ui \
+  qt/worx/forms/sendcustomfeedialog.ui \
+  qt/worx/forms/sendchangeaddressdialog.ui \
+  qt/worx/forms/sendmultirow.ui \
+  qt/worx/forms/send.ui \
+  qt/worx/forms/addnewaddressdialog.ui \
+  qt/worx/forms/addnewcontactdialog.ui \
+  qt/worx/forms/requestdialog.ui \
+  qt/worx/forms/receivewidget.ui \
+  qt/worx/forms/tooltipmenu.ui \
+  qt/worx/forms/addresseswidget.ui \
+  qt/worx/forms/defaultdialog.ui \
+  qt/worx/forms/denomgenerationdialog.ui \
+  qt/worx/forms/privacywidget.ui \
+  qt/worx/settings/forms/settingsbackupwallet.ui \
+  qt/worx/settings/forms/settingsbittoolwidget.ui \
+  qt/worx/settings/forms/settingsconsolewidget.ui \
+  qt/worx/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/worx/settings/forms/settingsfaqwidget.ui \
+  qt/worx/settings/forms/settingsinformationwidget.ui \
+  qt/worx/settings/forms/settingsmainoptionswidget.ui \
+  qt/worx/settings/forms/settingsmultisenddialog.ui \
+  qt/worx/settings/forms/settingsmultisendwidget.ui \
+  qt/worx/settings/forms/settingssignmessagewidgets.ui \
+  qt/worx/settings/forms/settingswalletoptionswidget.ui \
+  qt/worx/settings/forms/settingswalletrepairwidget.ui \
+  qt/worx/settings/forms/settingswidget.ui \
+  qt/worx/forms/welcomecontentwidget.ui \
+  qt/worx/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -125,7 +125,7 @@ QT_MOC_CPP = \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
   qt/moc_bitcoingui.cpp \
-  qt/pivx/moc_pivxgui.cpp \
+  qt/worx/moc_worxgui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
@@ -170,77 +170,77 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/pivx/moc_loadingdialog.cpp \
-  qt/moc_zpivcontroldialog.cpp \
-  qt/pivx/moc_pwidget.cpp \
-  qt/pivx/moc_snackbar.cpp \
-  qt/pivx/moc_navmenuwidget.cpp \
-  qt/pivx/moc_lockunlock.cpp \
-  qt/pivx/moc_expandablebutton.cpp \
-  qt/pivx/moc_furabstractlistitemdelegate.cpp \
-  qt/pivx/moc_receivedialog.cpp \
-  qt/pivx/moc_walletpassworddialog.cpp \
-  qt/pivx/moc_topbar.cpp \
-  qt/pivx/moc_txrow.cpp \
-  qt/pivx/moc_dashboardwidget.cpp \
-  qt/pivx/moc_coincontrolpivwidget.cpp \
-  qt/pivx/moc_addresslabelrow.cpp \
-  qt/pivx/moc_contactdropdownrow.cpp \
-  qt/pivx/moc_mninfodialog.cpp \
-  qt/pivx/moc_optionbutton.cpp \
-  qt/pivx/moc_mnmodel.cpp \
-  qt/pivx/moc_masternodewizarddialog.cpp \
-  qt/pivx/moc_mnrow.cpp \
-  qt/pivx/moc_masternodeswidget.cpp \
-  qt/pivx/moc_myaddressrow.cpp \
-  qt/pivx/moc_contactsdropdown.cpp \
-  qt/pivx/moc_sendchangeaddressdialog.cpp \
-  qt/pivx/moc_sendconfirmdialog.cpp \
-  qt/pivx/moc_sendcustomfeedialog.cpp \
-  qt/pivx/moc_sendchangeaddressdialog.cpp \
-  qt/pivx/moc_sendmultirow.cpp \
-  qt/pivx/moc_send.cpp \
-  qt/pivx/moc_addnewaddressdialog.cpp \
-  qt/pivx/moc_addnewcontactdialog.cpp \
-  qt/pivx/moc_requestdialog.cpp \
-  qt/pivx/moc_receivewidget.cpp \
-  qt/pivx/moc_tooltipmenu.cpp \
-  qt/pivx/moc_addresseswidget.cpp \
-  qt/pivx/moc_defaultdialog.cpp \
-  qt/pivx/moc_denomgenerationdialog.cpp \
-  qt/pivx/moc_privacywidget.cpp \
-  qt/pivx/settings/moc_settingsbackupwallet.cpp \
-  qt/pivx/settings/moc_settingsbittoolwidget.cpp \
-  qt/pivx/settings/moc_settingsconsolewidget.cpp \
-  qt/pivx/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/pivx/settings/moc_settingsfaqwidget.cpp \
-  qt/pivx/settings/moc_settingsinformationwidget.cpp \
-  qt/pivx/settings/moc_settingsmainoptionswidget.cpp \
-  qt/pivx/settings/moc_settingsmultisenddialog.cpp \
-  qt/pivx/settings/moc_settingsmultisendwidget.cpp \
-  qt/pivx/settings/moc_settingssignmessagewidgets.cpp \
-  qt/pivx/settings/moc_settingswalletoptionswidget.cpp \
-  qt/pivx/settings/moc_settingswalletrepairwidget.cpp \
-  qt/pivx/settings/moc_settingswidget.cpp \
-  qt/pivx/moc_welcomecontentwidget.cpp \
-  qt/pivx/moc_splash.cpp
+  qt/worx/moc_loadingdialog.cpp \
+  qt/moc_zworxcontroldialog.cpp \
+  qt/worx/moc_pwidget.cpp \
+  qt/worx/moc_snackbar.cpp \
+  qt/worx/moc_navmenuwidget.cpp \
+  qt/worx/moc_lockunlock.cpp \
+  qt/worx/moc_expandablebutton.cpp \
+  qt/worx/moc_furabstractlistitemdelegate.cpp \
+  qt/worx/moc_receivedialog.cpp \
+  qt/worx/moc_walletpassworddialog.cpp \
+  qt/worx/moc_topbar.cpp \
+  qt/worx/moc_txrow.cpp \
+  qt/worx/moc_dashboardwidget.cpp \
+  qt/worx/moc_coincontrolworxwidget.cpp \
+  qt/worx/moc_addresslabelrow.cpp \
+  qt/worx/moc_contactdropdownrow.cpp \
+  qt/worx/moc_mninfodialog.cpp \
+  qt/worx/moc_optionbutton.cpp \
+  qt/worx/moc_mnmodel.cpp \
+  qt/worx/moc_masternodewizarddialog.cpp \
+  qt/worx/moc_mnrow.cpp \
+  qt/worx/moc_masternodeswidget.cpp \
+  qt/worx/moc_myaddressrow.cpp \
+  qt/worx/moc_contactsdropdown.cpp \
+  qt/worx/moc_sendchangeaddressdialog.cpp \
+  qt/worx/moc_sendconfirmdialog.cpp \
+  qt/worx/moc_sendcustomfeedialog.cpp \
+  qt/worx/moc_sendchangeaddressdialog.cpp \
+  qt/worx/moc_sendmultirow.cpp \
+  qt/worx/moc_send.cpp \
+  qt/worx/moc_addnewaddressdialog.cpp \
+  qt/worx/moc_addnewcontactdialog.cpp \
+  qt/worx/moc_requestdialog.cpp \
+  qt/worx/moc_receivewidget.cpp \
+  qt/worx/moc_tooltipmenu.cpp \
+  qt/worx/moc_addresseswidget.cpp \
+  qt/worx/moc_defaultdialog.cpp \
+  qt/worx/moc_denomgenerationdialog.cpp \
+  qt/worx/moc_privacywidget.cpp \
+  qt/worx/settings/moc_settingsbackupwallet.cpp \
+  qt/worx/settings/moc_settingsbittoolwidget.cpp \
+  qt/worx/settings/moc_settingsconsolewidget.cpp \
+  qt/worx/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/worx/settings/moc_settingsfaqwidget.cpp \
+  qt/worx/settings/moc_settingsinformationwidget.cpp \
+  qt/worx/settings/moc_settingsmainoptionswidget.cpp \
+  qt/worx/settings/moc_settingsmultisenddialog.cpp \
+  qt/worx/settings/moc_settingsmultisendwidget.cpp \
+  qt/worx/settings/moc_settingssignmessagewidgets.cpp \
+  qt/worx/settings/moc_settingswalletoptionswidget.cpp \
+  qt/worx/settings/moc_settingswalletrepairwidget.cpp \
+  qt/worx/settings/moc_settingswidget.cpp \
+  qt/worx/moc_welcomecontentwidget.cpp \
+  qt/worx/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/pivx.moc \
+  qt/worx.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc \
-  qt/pivx/settings/moc_settingsconsolewidget.cpp
+  qt/worx/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_pivx.cpp
-QT_QRC = qt/pivx.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_pivx_locale.cpp
-QT_QRC_LOCALE = qt/pivx_locale.qrc
+QT_QRC_CPP = qt/qrc_worx.cpp
+QT_QRC = qt/worx.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_worx_locale.cpp
+QT_QRC_LOCALE = qt/worx_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -255,7 +255,7 @@ BITCOIN_QT_H = \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
   qt/bitcoingui.h \
-  qt/pivx/pivxgui.h \
+  qt/worx/worxgui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
@@ -305,67 +305,67 @@ BITCOIN_QT_H = \
   qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/pivx/prunnable.h \
-  qt/pivx/loadingdialog.h \
+  qt/worx/prunnable.h \
+  qt/worx/loadingdialog.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h \
-  qt/pivx/pwidget.h \
-  qt/pivx/snackbar.h \
-  qt/pivx/navmenuwidget.h \
-  qt/pivx/lockunlock.h \
-  qt/pivx/receivedialog.h \
-  qt/pivx/furlistrow.h \
-  qt/pivx/furabstractlistitemdelegate.h \
-  qt/pivx/txviewholder.h \
-  qt/pivx/qtutils.h \
-  qt/pivx/expandablebutton.h \
-  qt/pivx/walletpassworddialog.h \
-  qt/pivx/topbar.h \
-  qt/pivx/txrow.h \
-  qt/pivx/addressfilterproxymodel.h \
-  qt/pivx/dashboardwidget.h \
-  qt/pivx/coincontrolpivwidget.h \
-  qt/pivx/addresslabelrow.h \
-  qt/pivx/contactdropdownrow.h \
-  qt/pivx/mninfodialog.h \
-  qt/pivx/optionbutton.h \
-  qt/pivx/mnmodel.h \
-  qt/pivx/masternodewizarddialog.h \
-  qt/pivx/mnrow.h \
-  qt/pivx/masternodeswidget.h \
-  qt/pivx/myaddressrow.h \
-  qt/pivx/contactsdropdown.h \
-  qt/pivx/sendchangeaddressdialog.h \
-  qt/pivx/sendconfirmdialog.h \
-  qt/pivx/sendcustomfeedialog.h \
-  qt/pivx/sendchangeaddressdialog.h \
-  qt/pivx/sendmultirow.h \
-  qt/pivx/send.h \
-  qt/pivx/addnewaddressdialog.h \
-  qt/pivx/addnewcontactdialog.h \
-  qt/pivx/requestdialog.h \
-  qt/pivx/receivewidget.h \
-  qt/pivx/tooltipmenu.h \
-  qt/pivx/addresseswidget.h \
-  qt/pivx/defaultdialog.h \
-  qt/pivx/denomgenerationdialog.h \
-  qt/pivx/privacywidget.h \
-  qt/pivx/settings/settingsbackupwallet.h \
-  qt/pivx/settings/settingsbittoolwidget.h \
-  qt/pivx/settings/settingsconsolewidget.h \
-  qt/pivx/settings/settingsdisplayoptionswidget.h \
-  qt/pivx/settings/settingsfaqwidget.h \
-  qt/pivx/settings/settingsinformationwidget.h \
-  qt/pivx/settings/settingsmainoptionswidget.h \
-  qt/pivx/settings/settingsmultisenddialog.h \
-  qt/pivx/settings/settingsmultisendwidget.h \
-  qt/pivx/settings/settingssignmessagewidgets.h \
-  qt/pivx/settings/settingswalletoptionswidget.h \
-  qt/pivx/settings/settingswalletrepairwidget.h \
-  qt/pivx/settings/settingswidget.h \
-  qt/pivx/welcomecontentwidget.h \
-  qt/pivx/splash.h
+  qt/zworxcontroldialog.h \
+  qt/worx/pwidget.h \
+  qt/worx/snackbar.h \
+  qt/worx/navmenuwidget.h \
+  qt/worx/lockunlock.h \
+  qt/worx/receivedialog.h \
+  qt/worx/furlistrow.h \
+  qt/worx/furabstractlistitemdelegate.h \
+  qt/worx/txviewholder.h \
+  qt/worx/qtutils.h \
+  qt/worx/expandablebutton.h \
+  qt/worx/walletpassworddialog.h \
+  qt/worx/topbar.h \
+  qt/worx/txrow.h \
+  qt/worx/addressfilterproxymodel.h \
+  qt/worx/dashboardwidget.h \
+  qt/worx/coincontrolworxwidget.h \
+  qt/worx/addresslabelrow.h \
+  qt/worx/contactdropdownrow.h \
+  qt/worx/mninfodialog.h \
+  qt/worx/optionbutton.h \
+  qt/worx/mnmodel.h \
+  qt/worx/masternodewizarddialog.h \
+  qt/worx/mnrow.h \
+  qt/worx/masternodeswidget.h \
+  qt/worx/myaddressrow.h \
+  qt/worx/contactsdropdown.h \
+  qt/worx/sendchangeaddressdialog.h \
+  qt/worx/sendconfirmdialog.h \
+  qt/worx/sendcustomfeedialog.h \
+  qt/worx/sendchangeaddressdialog.h \
+  qt/worx/sendmultirow.h \
+  qt/worx/send.h \
+  qt/worx/addnewaddressdialog.h \
+  qt/worx/addnewcontactdialog.h \
+  qt/worx/requestdialog.h \
+  qt/worx/receivewidget.h \
+  qt/worx/tooltipmenu.h \
+  qt/worx/addresseswidget.h \
+  qt/worx/defaultdialog.h \
+  qt/worx/denomgenerationdialog.h \
+  qt/worx/privacywidget.h \
+  qt/worx/settings/settingsbackupwallet.h \
+  qt/worx/settings/settingsbittoolwidget.h \
+  qt/worx/settings/settingsconsolewidget.h \
+  qt/worx/settings/settingsdisplayoptionswidget.h \
+  qt/worx/settings/settingsfaqwidget.h \
+  qt/worx/settings/settingsinformationwidget.h \
+  qt/worx/settings/settingsmainoptionswidget.h \
+  qt/worx/settings/settingsmultisenddialog.h \
+  qt/worx/settings/settingsmultisendwidget.h \
+  qt/worx/settings/settingssignmessagewidgets.h \
+  qt/worx/settings/settingswalletoptionswidget.h \
+  qt/worx/settings/settingswalletrepairwidget.h \
+  qt/worx/settings/settingswidget.h \
+  qt/worx/welcomecontentwidget.h \
+  qt/worx/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -431,201 +431,201 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_pivx.png \
-  qt/res/icons/unit_mpivx.png \
-  qt/res/icons/unit_upivx.png \
-  qt/res/icons/unit_tpivx.png \
-  qt/res/icons/unit_tmpivx.png \
-  qt/res/icons/unit_tupivx.png \
+  qt/res/icons/unit_worx.png \
+  qt/res/icons/unit_mworx.png \
+  qt/res/icons/unit_uworx.png \
+  qt/res/icons/unit_tworx.png \
+  qt/res/icons/unit_tmworx.png \
+  qt/res/icons/unit_tuworx.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/pivx/res/img/bg-dashboard-banner.png \
-  qt/pivx/res/img/bg-multi-number-dark.svg \
-  qt/pivx/res/img/ic-check-locked.svg \
-  qt/pivx/res/img/ic-nav-address.svg \
-  qt/pivx/res/img/ic-update.svg \
-  qt/pivx/res/img/bg-multi-number.svg \
-  qt/pivx/res/img/ic-check-mint-off.svg \
-  qt/pivx/res/img/ic-nav-dashboard-active.svg \
-  qt/pivx/res/img/ic-wallet-status-locked.svg \
-  qt/pivx/res/img/bg-splash.svg \
-  qt/pivx/res/img/bg-splash.png \
-  qt/pivx/res/img/ic-check-mint.svg \
-  qt/pivx/res/img/ic-nav-dashboard-hover.svg \
-  qt/pivx/res/img/ic-wallet-status-staking.svg \
-  qt/pivx/res/img/ic-check-peers-off.svg \
-  qt/pivx/res/img/ic-nav-dashboard.svg \
-  qt/pivx/res/img/ic-wallet-status-unlocked.svg \
-  qt/pivx/res/img/ic-check-peers.svg \
-  qt/pivx/res/img/ic-nav-master-active.svg \
-  qt/pivx/res/img/ic-watch-password-white.svg \
-  qt/pivx/res/img/bg-welcome-container.jpg \
-  qt/pivx/res/img/bg-welcome-container.png \
-  qt/pivx/res/img/bg-welcome-container.svg \
-  qt/pivx/res/img/bg-welcome-container@2x.png \
-  qt/pivx/res/img/bg-welcome-container@3x.png \
-  qt/pivx/res/img/ic-check-staking-off.svg \
-  qt/pivx/res/img/ic-nav-master-hover.svg \
-  qt/pivx/res/img/ic-watch-password.svg \
-  qt/pivx/res/img/bg-welcome.jpg \
-  qt/pivx/res/img/bg-welcome.svg \
-  qt/pivx/res/img/bg-welcome@2x.jpg \
-  qt/pivx/res/img/bg-welcome@3x.jpg \
-  qt/pivx/res/img/bg-welcome.png \
-  qt/pivx/res/img/ic-check-staking.svg \
-  qt/pivx/res/img/ic-nav-master.svg \
-  qt/pivx/res/img/img-dashboard-banner.jpg \
-  qt/pivx/res/img/btn-radio-active.svg \
-  qt/pivx/res/img/ic-check-sync-off.svg \
-  qt/pivx/res/img/ic-nav-privacy-active.svg \
-  qt/pivx/res/img/img-empty-contacts.svg \
-  qt/pivx/res/img/btn-radio-off.svg \
-  qt/pivx/res/img/ic-check-sync.png \
-  qt/pivx/res/img/ic-nav-privacy-hover.svg \
-  qt/pivx/res/img/img-empty-dark-contacts.svg \
-  qt/pivx/res/img/ic-contact-arrow-down.svg \
-  qt/pivx/res/img/ic-contact-arrow-down-white.svg \
-  qt/pivx/res/img/ic-check-sync.svg \
-  qt/pivx/res/img/ic-check-faq.svg \
-  qt/pivx/res/img/ic-nav-privacy.svg \
-  qt/pivx/res/img/img-empty-dark-error.svg \
-  qt/pivx/res/img/ic-add-label.svg \
-  qt/pivx/res/img/ic-pending.svg \
-  qt/pivx/res/img/ic-check-theme-dark.svg \
-  qt/pivx/res/img/ic-nav-receive-active.svg \
-  qt/pivx/res/img/img-empty-dark-masternode.svg \
-  qt/pivx/res/img/ic-add-liliac.svg \
-  qt/pivx/res/img/ic-check-theme-light.svg \
-  qt/pivx/res/img/ic-nav-receive-hover.svg \
-  qt/pivx/res/img/img-empty-dark-multisend.svg \
-  qt/pivx/res/img/ic-add-purple.svg \
-  qt/pivx/res/img/ic-check-white.svg \
-  qt/pivx/res/img/ic-nav-receive.svg \
-  qt/pivx/res/img/img-empty-dark-peers.svg \
-  qt/pivx/res/img/ic-add.svg \
-  qt/pivx/res/img/ic-check.svg \
-  qt/pivx/res/img/ic-nav-send-active.svg \
-  qt/pivx/res/img/img-empty-dark-staking-off.svg \
-  qt/pivx/res/img/img-empty-dark-staking-on.svg \
-  qt/pivx/res/img/ic-address-book-grey.svg \
-  qt/pivx/res/img/ic-chevron-left.svg \
-  qt/pivx/res/img/ic-nav-send-hover.svg \
-  qt/pivx/res/img/img-empty-dark-transactions.svg \
-  qt/pivx/res/img/ic-address-book-white.svg \
-  qt/pivx/res/img/ic-chevron-right.svg \
-  qt/pivx/res/img/ic-nav-send.svg \
-  qt/pivx/res/img/img-empty-error.svg \
-  qt/pivx/res/img/ic-address-book.svg \
-  qt/pivx/res/img/ic-clear-liliac.svg \
-  qt/pivx/res/img/ic-nav-settings-active.svg \
-  qt/pivx/res/img/img-empty-masternode.svg \
-  qt/pivx/res/img/ic-address-send-white.svg \
-  qt/pivx/res/img/ic-clear-purple.svg \
-  qt/pivx/res/img/ic-nav-settings-hover.svg \
-  qt/pivx/res/img/img-empty-multisend.svg \
-  qt/pivx/res/img/ic-address-send.svg \
-  qt/pivx/res/img/ic-close-white.svg \
-  qt/pivx/res/img/ic-nav-settings.svg \
-  qt/pivx/res/img/img-empty-peers.svg \
-  qt/pivx/res/img/img-empty-privacy.svg \
-  qt/pivx/res/img/img-empty-privacy-dark.svg \
-  qt/pivx/res/img/ic-arrow-drop-down-white.svg \
-  qt/pivx/res/img/ic-close.svg \
-  qt/pivx/res/img/ic-radio-liliac-on.svg \
-  qt/pivx/res/img/img-empty-staking-off.svg \
-  qt/pivx/res/img/ic-arrow-drop-down.svg \
-  qt/pivx/res/img/ic-coin-piv.svg \
-  qt/pivx/res/img/ic-receive-off.svg \
-  qt/pivx/res/img/img-empty-staking-on.svg \
-  qt/pivx/res/img/ic-arrow-drop-up-white.svg \
-  qt/pivx/res/img/ic-coin-zpiv.png \
-  qt/pivx/res/img/ic-receive-on.svg \
-  qt/pivx/res/img/img-empty-transactions.svg \
-  qt/pivx/res/img/ic-arrow-drop-up.svg \
-  qt/pivx/res/img/ic-coin-zpiv.svg \
-  qt/pivx/res/img/ic-received.svg \
-  qt/pivx/res/img/img-logo-pivx.png \
-  qt/pivx/res/img/ic-arrow-drop-white-down.svg \
-  qt/pivx/res/img/ic-combo-box.svg \
-  qt/pivx/res/img/ic-send.svg \
-  qt/pivx/res/img/img-logo-pivx@2x.png \
-  qt/pivx/res/img/ic-arrow-purple-down.svg \
-  qt/pivx/res/img/ic-connect.svg \
-  qt/pivx/res/img/ic-submenu-lock.svg \
-  qt/pivx/res/img/img-logo-pivx@3x.png \
-  qt/pivx/res/img/img-logo-pivx.svg \
-  qt/pivx/res/img/ic-arrow-right-white.svg \
-  qt/pivx/res/img/ic-arrow-left-white.svg \
-  qt/pivx/res/img/ic-arrow-left.svg \
-  qt/pivx/res/img/ic-copy-liliac.svg \
-  qt/pivx/res/img/ic-submenu-staking.svg \
-  qt/pivx/res/img/img-nav-logo-pivx.png \
-  qt/pivx/res/img/ic-arrow-right.svg \
-  qt/pivx/res/img/ic-copy.svg \
-  qt/pivx/res/img/ic-copy-big.svg \
-  qt/pivx/res/img/ic-copy-big-white.svg \
-  qt/pivx/res/img/ic-submenu-unlock.svg \
-  qt/pivx/res/img/img-nav-logo.png \
-  qt/pivx/res/img/ic-arrow-white-left.svg \
-  qt/pivx/res/img/ic-exit.svg \
-  qt/pivx/res/img/ic-switch-liliac-on.svg \
-  qt/pivx/res/img/img-nav-logo.svg \
-  qt/pivx/res/img/ic-arrow-white-right.svg \
-  qt/pivx/res/img/ic-expand.svg \
-  qt/pivx/res/img/ic-switch-off.svg \
-  qt/pivx/res/img/img-qr-test-big.png \
-  qt/pivx/res/img/ic-check-active.svg \
-  qt/pivx/res/img/ic-folder.svg \
-  qt/pivx/res/img/ic-switch-on.svg \
-  qt/pivx/res/img/img-qr-test.png \
-  qt/pivx/res/img/ic-check-box.svg \
-  qt/pivx/res/img/ic-check-box-dark-active.svg \
-  qt/pivx/res/img/ic-check-box-indeterminate.svg \
-  qt/pivx/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/pivx/res/img/ic-label-liliac.svg \
-  qt/pivx/res/img/ic-transaction-warning.svg \
-  qt/pivx/res/img/ic-transaction-mint.svg \
-  qt/pivx/res/img/ic-transaction-mint-inactive.svg \
-  qt/pivx/res/img/img-qr.svg \
-  qt/pivx/res/img/ic-check-connect-off.svg \
-  qt/pivx/res/img/ic-label.svg \
-  qt/pivx/res/img/ic-transaction-received.svg \
-  qt/pivx/res/img/dark/ic-transaction-received.svg \
-  qt/pivx/res/img/dark/ic-transaction-warning.svg \
-  qt/pivx/res/img/dark/ic-transaction-mint.svg \
-  qt/pivx/res/img/dark/ic-transaction-mint-inactive.svg \
-  qt/pivx/res/img/ic-transaction-received-inactive.svg \
-  qt/pivx/res/img/dark/ic-transaction-received-inactive.svg \
-  qt/pivx/res/img/img-welcome-step1.png \
-  qt/pivx/res/img/ic-check-connect.svg \
-  qt/pivx/res/img/ic-menu-hover.svg \
-  qt/pivx/res/img/ic-transaction-sent.svg \
-  qt/pivx/res/img/ic-transaction-sent-inactive.svg \
-  qt/pivx/res/img/dark/ic-transaction-sent.svg \
-  qt/pivx/res/img/dark/ic-transaction-sent-inactive.svg \
-  qt/pivx/res/img/img-welcome-step2.png \
-  qt/pivx/res/img/ic-check-dark.svg \
-  qt/pivx/res/img/ic-mint.svg \
-  qt/pivx/res/img/ic-transaction-staked.svg \
-  qt/pivx/res/img/ic-transaction-staked-inactive.svg \
-  qt/pivx/res/img/dark/ic-transaction-staked.svg \
-  qt/pivx/res/img/dark/ic-transaction-staked-inactive.svg \
-  qt/pivx/res/img/img-welcome-step3.png \
-  qt/pivx/res/img/ic-check-liliac-on.svg \
-  qt/pivx/res/img/ic-nav-address-active.svg \
-  qt/pivx/res/img/ic-unlock-staking.svg \
-  qt/pivx/res/img/img-welcome-step4.png \
-  qt/pivx/res/img/ic-check-locked-off.svg \
-  qt/pivx/res/img/ic-nav-address-hover.svg \
-  qt/pivx/res/img/ic-update-liliac.svg \
-  qt/pivx/res/img/ic-arrow-drop-down-purple.svg \
-  qt/pivx/res/img/ic-arrow-drop-up-purple.svg \
-  qt/pivx/res/img/ic-check-liliac-indeterminate.svg \
-  qt/pivx/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/pivx/res/img/ic-check-box-indeterminate.svg \
-  qt/pivx/res/img/ani-loading-dark.gif \
-  qt/pivx/res/img/ani-loading.gif
+  qt/worx/res/img/bg-dashboard-banner.png \
+  qt/worx/res/img/bg-multi-number-dark.svg \
+  qt/worx/res/img/ic-check-locked.svg \
+  qt/worx/res/img/ic-nav-address.svg \
+  qt/worx/res/img/ic-update.svg \
+  qt/worx/res/img/bg-multi-number.svg \
+  qt/worx/res/img/ic-check-mint-off.svg \
+  qt/worx/res/img/ic-nav-dashboard-active.svg \
+  qt/worx/res/img/ic-wallet-status-locked.svg \
+  qt/worx/res/img/bg-splash.svg \
+  qt/worx/res/img/bg-splash.png \
+  qt/worx/res/img/ic-check-mint.svg \
+  qt/worx/res/img/ic-nav-dashboard-hover.svg \
+  qt/worx/res/img/ic-wallet-status-staking.svg \
+  qt/worx/res/img/ic-check-peers-off.svg \
+  qt/worx/res/img/ic-nav-dashboard.svg \
+  qt/worx/res/img/ic-wallet-status-unlocked.svg \
+  qt/worx/res/img/ic-check-peers.svg \
+  qt/worx/res/img/ic-nav-master-active.svg \
+  qt/worx/res/img/ic-watch-password-white.svg \
+  qt/worx/res/img/bg-welcome-container.jpg \
+  qt/worx/res/img/bg-welcome-container.png \
+  qt/worx/res/img/bg-welcome-container.svg \
+  qt/worx/res/img/bg-welcome-container@2x.png \
+  qt/worx/res/img/bg-welcome-container@3x.png \
+  qt/worx/res/img/ic-check-staking-off.svg \
+  qt/worx/res/img/ic-nav-master-hover.svg \
+  qt/worx/res/img/ic-watch-password.svg \
+  qt/worx/res/img/bg-welcome.jpg \
+  qt/worx/res/img/bg-welcome.svg \
+  qt/worx/res/img/bg-welcome@2x.jpg \
+  qt/worx/res/img/bg-welcome@3x.jpg \
+  qt/worx/res/img/bg-welcome.png \
+  qt/worx/res/img/ic-check-staking.svg \
+  qt/worx/res/img/ic-nav-master.svg \
+  qt/worx/res/img/img-dashboard-banner.jpg \
+  qt/worx/res/img/btn-radio-active.svg \
+  qt/worx/res/img/ic-check-sync-off.svg \
+  qt/worx/res/img/ic-nav-privacy-active.svg \
+  qt/worx/res/img/img-empty-contacts.svg \
+  qt/worx/res/img/btn-radio-off.svg \
+  qt/worx/res/img/ic-check-sync.png \
+  qt/worx/res/img/ic-nav-privacy-hover.svg \
+  qt/worx/res/img/img-empty-dark-contacts.svg \
+  qt/worx/res/img/ic-contact-arrow-down.svg \
+  qt/worx/res/img/ic-contact-arrow-down-white.svg \
+  qt/worx/res/img/ic-check-sync.svg \
+  qt/worx/res/img/ic-check-faq.svg \
+  qt/worx/res/img/ic-nav-privacy.svg \
+  qt/worx/res/img/img-empty-dark-error.svg \
+  qt/worx/res/img/ic-add-label.svg \
+  qt/worx/res/img/ic-pending.svg \
+  qt/worx/res/img/ic-check-theme-dark.svg \
+  qt/worx/res/img/ic-nav-receive-active.svg \
+  qt/worx/res/img/img-empty-dark-masternode.svg \
+  qt/worx/res/img/ic-add-liliac.svg \
+  qt/worx/res/img/ic-check-theme-light.svg \
+  qt/worx/res/img/ic-nav-receive-hover.svg \
+  qt/worx/res/img/img-empty-dark-multisend.svg \
+  qt/worx/res/img/ic-add-purple.svg \
+  qt/worx/res/img/ic-check-white.svg \
+  qt/worx/res/img/ic-nav-receive.svg \
+  qt/worx/res/img/img-empty-dark-peers.svg \
+  qt/worx/res/img/ic-add.svg \
+  qt/worx/res/img/ic-check.svg \
+  qt/worx/res/img/ic-nav-send-active.svg \
+  qt/worx/res/img/img-empty-dark-staking-off.svg \
+  qt/worx/res/img/img-empty-dark-staking-on.svg \
+  qt/worx/res/img/ic-address-book-grey.svg \
+  qt/worx/res/img/ic-chevron-left.svg \
+  qt/worx/res/img/ic-nav-send-hover.svg \
+  qt/worx/res/img/img-empty-dark-transactions.svg \
+  qt/worx/res/img/ic-address-book-white.svg \
+  qt/worx/res/img/ic-chevron-right.svg \
+  qt/worx/res/img/ic-nav-send.svg \
+  qt/worx/res/img/img-empty-error.svg \
+  qt/worx/res/img/ic-address-book.svg \
+  qt/worx/res/img/ic-clear-liliac.svg \
+  qt/worx/res/img/ic-nav-settings-active.svg \
+  qt/worx/res/img/img-empty-masternode.svg \
+  qt/worx/res/img/ic-address-send-white.svg \
+  qt/worx/res/img/ic-clear-purple.svg \
+  qt/worx/res/img/ic-nav-settings-hover.svg \
+  qt/worx/res/img/img-empty-multisend.svg \
+  qt/worx/res/img/ic-address-send.svg \
+  qt/worx/res/img/ic-close-white.svg \
+  qt/worx/res/img/ic-nav-settings.svg \
+  qt/worx/res/img/img-empty-peers.svg \
+  qt/worx/res/img/img-empty-privacy.svg \
+  qt/worx/res/img/img-empty-privacy-dark.svg \
+  qt/worx/res/img/ic-arrow-drop-down-white.svg \
+  qt/worx/res/img/ic-close.svg \
+  qt/worx/res/img/ic-radio-liliac-on.svg \
+  qt/worx/res/img/img-empty-staking-off.svg \
+  qt/worx/res/img/ic-arrow-drop-down.svg \
+  qt/worx/res/img/ic-coin-worx.svg \
+  qt/worx/res/img/ic-receive-off.svg \
+  qt/worx/res/img/img-empty-staking-on.svg \
+  qt/worx/res/img/ic-arrow-drop-up-white.svg \
+  qt/worx/res/img/ic-coin-zworx.png \
+  qt/worx/res/img/ic-receive-on.svg \
+  qt/worx/res/img/img-empty-transactions.svg \
+  qt/worx/res/img/ic-arrow-drop-up.svg \
+  qt/worx/res/img/ic-coin-zworx.svg \
+  qt/worx/res/img/ic-received.svg \
+  qt/worx/res/img/img-logo-worx.png \
+  qt/worx/res/img/ic-arrow-drop-white-down.svg \
+  qt/worx/res/img/ic-combo-box.svg \
+  qt/worx/res/img/ic-send.svg \
+  qt/worx/res/img/img-logo-worx@2x.png \
+  qt/worx/res/img/ic-arrow-purple-down.svg \
+  qt/worx/res/img/ic-connect.svg \
+  qt/worx/res/img/ic-submenu-lock.svg \
+  qt/worx/res/img/img-logo-worx@3x.png \
+  qt/worx/res/img/img-logo-worx.svg \
+  qt/worx/res/img/ic-arrow-right-white.svg \
+  qt/worx/res/img/ic-arrow-left-white.svg \
+  qt/worx/res/img/ic-arrow-left.svg \
+  qt/worx/res/img/ic-copy-liliac.svg \
+  qt/worx/res/img/ic-submenu-staking.svg \
+  qt/worx/res/img/img-nav-logo-worx.png \
+  qt/worx/res/img/ic-arrow-right.svg \
+  qt/worx/res/img/ic-copy.svg \
+  qt/worx/res/img/ic-copy-big.svg \
+  qt/worx/res/img/ic-copy-big-white.svg \
+  qt/worx/res/img/ic-submenu-unlock.svg \
+  qt/worx/res/img/img-nav-logo.png \
+  qt/worx/res/img/ic-arrow-white-left.svg \
+  qt/worx/res/img/ic-exit.svg \
+  qt/worx/res/img/ic-switch-liliac-on.svg \
+  qt/worx/res/img/img-nav-logo.svg \
+  qt/worx/res/img/ic-arrow-white-right.svg \
+  qt/worx/res/img/ic-expand.svg \
+  qt/worx/res/img/ic-switch-off.svg \
+  qt/worx/res/img/img-qr-test-big.png \
+  qt/worx/res/img/ic-check-active.svg \
+  qt/worx/res/img/ic-folder.svg \
+  qt/worx/res/img/ic-switch-on.svg \
+  qt/worx/res/img/img-qr-test.png \
+  qt/worx/res/img/ic-check-box.svg \
+  qt/worx/res/img/ic-check-box-dark-active.svg \
+  qt/worx/res/img/ic-check-box-indeterminate.svg \
+  qt/worx/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/worx/res/img/ic-label-liliac.svg \
+  qt/worx/res/img/ic-transaction-warning.svg \
+  qt/worx/res/img/ic-transaction-mint.svg \
+  qt/worx/res/img/ic-transaction-mint-inactive.svg \
+  qt/worx/res/img/img-qr.svg \
+  qt/worx/res/img/ic-check-connect-off.svg \
+  qt/worx/res/img/ic-label.svg \
+  qt/worx/res/img/ic-transaction-received.svg \
+  qt/worx/res/img/dark/ic-transaction-received.svg \
+  qt/worx/res/img/dark/ic-transaction-warning.svg \
+  qt/worx/res/img/dark/ic-transaction-mint.svg \
+  qt/worx/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/worx/res/img/ic-transaction-received-inactive.svg \
+  qt/worx/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/worx/res/img/img-welcome-step1.png \
+  qt/worx/res/img/ic-check-connect.svg \
+  qt/worx/res/img/ic-menu-hover.svg \
+  qt/worx/res/img/ic-transaction-sent.svg \
+  qt/worx/res/img/ic-transaction-sent-inactive.svg \
+  qt/worx/res/img/dark/ic-transaction-sent.svg \
+  qt/worx/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/worx/res/img/img-welcome-step2.png \
+  qt/worx/res/img/ic-check-dark.svg \
+  qt/worx/res/img/ic-mint.svg \
+  qt/worx/res/img/ic-transaction-staked.svg \
+  qt/worx/res/img/ic-transaction-staked-inactive.svg \
+  qt/worx/res/img/dark/ic-transaction-staked.svg \
+  qt/worx/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/worx/res/img/img-welcome-step3.png \
+  qt/worx/res/img/ic-check-liliac-on.svg \
+  qt/worx/res/img/ic-nav-address-active.svg \
+  qt/worx/res/img/ic-unlock-staking.svg \
+  qt/worx/res/img/img-welcome-step4.png \
+  qt/worx/res/img/ic-check-locked-off.svg \
+  qt/worx/res/img/ic-nav-address-hover.svg \
+  qt/worx/res/img/ic-update-liliac.svg \
+  qt/worx/res/img/ic-arrow-drop-down-purple.svg \
+  qt/worx/res/img/ic-arrow-drop-up-purple.svg \
+  qt/worx/res/img/ic-check-liliac-indeterminate.svg \
+  qt/worx/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/worx/res/img/ic-check-box-indeterminate.svg \
+  qt/worx/res/img/ani-loading-dark.gif \
+  qt/worx/res/img/ani-loading.gif
 
 
 
@@ -634,7 +634,7 @@ BITCOIN_QT_BASE_CPP = \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
   qt/bitcoingui.cpp \
-  qt/pivx/pivxgui.cpp \
+  qt/worx/worxgui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
@@ -692,63 +692,63 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/pivx/loadingdialog.cpp \
-  qt/zpivcontroldialog.cpp \
-  qt/pivx/pwidget.cpp \
-  qt/pivx/snackbar.cpp \
-  qt/pivx/navmenuwidget.cpp \
-  qt/pivx/lockunlock.cpp \
-  qt/pivx/receivedialog.cpp \
-  qt/pivx/furabstractlistitemdelegate.cpp \
-  qt/pivx/txviewholder.cpp \
-  qt/pivx/qtutils.cpp \
-  qt/pivx/expandablebutton.cpp \
-  qt/pivx/walletpassworddialog.cpp \
-  qt/pivx/topbar.cpp \
-  qt/pivx/txrow.cpp \
-  qt/pivx/addressfilterproxymodel.cpp \
-  qt/pivx/dashboardwidget.cpp \
-  qt/pivx/coincontrolpivwidget.cpp \
-  qt/pivx/addresslabelrow.cpp \
-  qt/pivx/contactdropdownrow.cpp \
-  qt/pivx/contactsdropdown.cpp \
-  qt/pivx/optionbutton.cpp \
-  qt/pivx/mninfodialog.cpp \
-  qt/pivx/mnmodel.cpp \
-  qt/pivx/masternodewizarddialog.cpp \
-  qt/pivx/mnrow.cpp \
-  qt/pivx/masternodeswidget.cpp \
-  qt/pivx/myaddressrow.cpp \
-  qt/pivx/sendchangeaddressdialog.cpp \
-  qt/pivx/sendconfirmdialog.cpp \
-  qt/pivx/sendcustomfeedialog.cpp \
-  qt/pivx/sendchangeaddressdialog.cpp \
-  qt/pivx/sendmultirow.cpp \
-  qt/pivx/send.cpp \
-  qt/pivx/addnewaddressdialog.cpp \
-  qt/pivx/addnewcontactdialog.cpp \
-  qt/pivx/requestdialog.cpp \
-  qt/pivx/receivewidget.cpp \
-  qt/pivx/tooltipmenu.cpp \
-  qt/pivx/addresseswidget.cpp \
-  qt/pivx/defaultdialog.cpp \
-  qt/pivx/denomgenerationdialog.cpp \
-  qt/pivx/privacywidget.cpp \
-  qt/pivx/settings/settingsbackupwallet.cpp \
-  qt/pivx/settings/settingsbittoolwidget.cpp \
-  qt/pivx/settings/settingsconsolewidget.cpp \
-  qt/pivx/settings/settingsdisplayoptionswidget.cpp \
-  qt/pivx/settings/settingsfaqwidget.cpp \
-  qt/pivx/settings/settingsinformationwidget.cpp \
-  qt/pivx/settings/settingsmainoptionswidget.cpp \
-  qt/pivx/settings/settingsmultisenddialog.cpp \
-  qt/pivx/settings/settingsmultisendwidget.cpp \
-  qt/pivx/settings/settingssignmessagewidgets.cpp \
-  qt/pivx/settings/settingswalletoptionswidget.cpp \
-  qt/pivx/settings/settingswalletrepairwidget.cpp \
-  qt/pivx/settings/settingswidget.cpp \
-  qt/pivx/welcomecontentwidget.cpp \
-  qt/pivx/splash.cpp
+  qt/worx/loadingdialog.cpp \
+  qt/zworxcontroldialog.cpp \
+  qt/worx/pwidget.cpp \
+  qt/worx/snackbar.cpp \
+  qt/worx/navmenuwidget.cpp \
+  qt/worx/lockunlock.cpp \
+  qt/worx/receivedialog.cpp \
+  qt/worx/furabstractlistitemdelegate.cpp \
+  qt/worx/txviewholder.cpp \
+  qt/worx/qtutils.cpp \
+  qt/worx/expandablebutton.cpp \
+  qt/worx/walletpassworddialog.cpp \
+  qt/worx/topbar.cpp \
+  qt/worx/txrow.cpp \
+  qt/worx/addressfilterproxymodel.cpp \
+  qt/worx/dashboardwidget.cpp \
+  qt/worx/coincontrolworxwidget.cpp \
+  qt/worx/addresslabelrow.cpp \
+  qt/worx/contactdropdownrow.cpp \
+  qt/worx/contactsdropdown.cpp \
+  qt/worx/optionbutton.cpp \
+  qt/worx/mninfodialog.cpp \
+  qt/worx/mnmodel.cpp \
+  qt/worx/masternodewizarddialog.cpp \
+  qt/worx/mnrow.cpp \
+  qt/worx/masternodeswidget.cpp \
+  qt/worx/myaddressrow.cpp \
+  qt/worx/sendchangeaddressdialog.cpp \
+  qt/worx/sendconfirmdialog.cpp \
+  qt/worx/sendcustomfeedialog.cpp \
+  qt/worx/sendchangeaddressdialog.cpp \
+  qt/worx/sendmultirow.cpp \
+  qt/worx/send.cpp \
+  qt/worx/addnewaddressdialog.cpp \
+  qt/worx/addnewcontactdialog.cpp \
+  qt/worx/requestdialog.cpp \
+  qt/worx/receivewidget.cpp \
+  qt/worx/tooltipmenu.cpp \
+  qt/worx/addresseswidget.cpp \
+  qt/worx/defaultdialog.cpp \
+  qt/worx/denomgenerationdialog.cpp \
+  qt/worx/privacywidget.cpp \
+  qt/worx/settings/settingsbackupwallet.cpp \
+  qt/worx/settings/settingsbittoolwidget.cpp \
+  qt/worx/settings/settingsconsolewidget.cpp \
+  qt/worx/settings/settingsdisplayoptionswidget.cpp \
+  qt/worx/settings/settingsfaqwidget.cpp \
+  qt/worx/settings/settingsinformationwidget.cpp \
+  qt/worx/settings/settingsmainoptionswidget.cpp \
+  qt/worx/settings/settingsmultisenddialog.cpp \
+  qt/worx/settings/settingsmultisendwidget.cpp \
+  qt/worx/settings/settingssignmessagewidgets.cpp \
+  qt/worx/settings/settingswalletoptionswidget.cpp \
+  qt/worx/settings/settingswalletrepairwidget.cpp \
+  qt/worx/settings/settingswidget.cpp \
+  qt/worx/welcomecontentwidget.cpp \
+  qt/worx/splash.cpp
 
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
@@ -764,7 +764,7 @@ RES_IMAGES = \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png \
-  qt/res/images/pivx_logo_horizontal.png \
+  qt/res/images/worx_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
   qt/res/images/downArrow_small.png \
@@ -776,12 +776,12 @@ RES_IMAGES = \
 
 RES_CSS = \
   qt/res/css/default.css \
-  qt/pivx/res/css/style_dark.css \
-  qt/pivx/res/css/style_light.css
+  qt/worx/res/css/style_dark.css \
+  qt/worx/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/pivx-qt-res.rc
+BITCOIN_RC = qt/res/worx-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -803,71 +803,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_pivx_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_worx_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# pivx-qt binary #
-qt_pivx_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# worx-qt binary #
+qt_worx_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
-qt_pivx_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_worx_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_pivx_qt_SOURCES = qt/pivx.cpp
+qt_worx_qt_SOURCES = qt/worx.cpp
 if TARGET_DARWIN
-  qt_pivx_qt_SOURCES += $(BITCOIN_MM)
+  qt_worx_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_pivx_qt_SOURCES += $(BITCOIN_RC)
+  qt_worx_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_pivx_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_worx_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_pivx_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_worx_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_pivx_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_worx_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_pivx_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_worx_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_pivx_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_pivx_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_worx_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_worx_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/pivxstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/worxstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/pivxstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/pivx.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/worxstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/worx.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/pivx_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/worx_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name pivx_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name worx_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name pivx $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name worx $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_pivx_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_worx_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-pivx_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_pivx_qt_OBJECTS) qt/pivx-qt$(EXEEXT) $(LIBBITCOINQT)
+worx_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_worx_qt_OBJECTS) qt/worx-qt$(EXEEXT) $(LIBBITCOINQT)
 
-pivx_qt : qt/pivx-qt$(EXEEXT)
+worx_qt : qt/worx-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

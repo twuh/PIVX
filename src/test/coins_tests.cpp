@@ -4,7 +4,7 @@
 
 #include "coins.h"
 #include "uint256.h"
-#include "test/test_pivx.h"
+#include "test/test_worx.h"
 
 #include <vector>
 #include <map>

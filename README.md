@@ -1,59 +1,137 @@
-WORX Core integration/staging repository
-=====================================
+ Anonymized transactions using coin mixing technology. 1-Second-Transactions. Network stability with masternodes, each is secured with a collateral of 5000 WORX.
 
-[![Build Status](https://travis-ci.org/WORX-Project/WORX.svg?branch=master)](https://travis-ci.org/WORX-Project/WORX) [![GitHub version](https://badge.fury.io/gh/WORX-Project%2FWORX.svg)](https://badge.fury.io/gh/WORX-Project%2FWORX)
+For further information visit us at [worx.world](https://worx.world/) or visit our ANN thread at [BitcoinTalk](TBA)
 
-WORX is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in WORX by granting a higher block reward for zPoS over regular PoS and masternodes. In practice WORX has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zWORX for easy backups.](https://www.reddit.com/r/worx/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
-The goal of WORX is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.worx.org/zworx) and [zPoS](https://worx.org/zpos/).
-- light/mobile wallet privacy using the [Zerocoin Light Node Protocol](https://worx.org/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf)
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
-- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
+# Masternode Setup Guide  
+**[Cold Guide](http://worx.world/assets/setupguides/Cold_Wallet_Guide.pdf) | [Hot Guide](http://worx.world/assets/setupguides/Hot_Wallet_Guide.pdf) | [Easy Install Script](https://github.com/WG91/WorxInstaller/blob/master/README.md)**
 
-More information at [worx.org](http://www.worx.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+# Coin Specs
 
-### Coin Specs
+• PoW Algorithm: Quark  
+• Premine: (#0 Block) 100,000 WORX  
+• PoW Blocks: 1 - 1430  
+• PoS Blocks: Starting from 1431  
+• Block Time: 60 Seconds  
+• PoW Ending: ~ ca. 1/2 Days (Estimated: May 2018)  
+• Masternode Requirements: 5000 WORX  
+• Maturity: 101 Confirmations  
+
+# PoW Reward Distribution
+
+_Proof of Work block rewards, masternode reward allocation_
+
 <table>
-<tr><td>Algo</td><td>Quark</td></tr>
-<tr><td>Block Time</td><td>60 Seconds</td></tr>
-<tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 WORX</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>60,000 WORX*</td></tr>
+<tr><th>Block Height</th><th>Reward Amount</th><th>Masternodes</th><th>Miners</th></tr>
+<tr><td>Block 1 - 1430</td><td>2 WORX</td><td>Masternodes 80%</td><td>Miners 20%</td></tr>
 </table>
 
-*60,000 WORX Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/WORX/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
+# PoS Block Rewards
 
-### Reward Distribution
-
-<table>
-<th colspan=4>Genesis Block</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 WORX</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/WORX/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
-</table>
-
-### PoW Rewards Breakdown
+_Proof of Stake will automatically be enabled at block 1441._
 
 <table>
-<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-43200</td><td>20% (50 WORX)</td><td>80% (200 WORX)</td><td>N/A</td></tr>
-<tr><td>43201-151200</td><td>20% (50 WORX)</td><td>70% (200 WORX)</td><td>10% (25 WORX)</td></tr>
-<tr><td>151201-259200</td><td>45% (22.5 WORX)</td><td>45% (22.5 WORX)</td><td>10% (5 WORX)</td></tr>
-</table>
-
-### PoS Rewards Breakdown
-
-<table>
-<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 0</td><td>259201-302399</td><td>50 WORX</td><td>90% (45 WORX)</td><td>10% (5 WORX)</td></tr>
-<tr><td>Phase 1</td><td>302400-345599</td><td>45 WORX</td><td>90% (40.5 WORX)</td><td>10% (4.5 WORX)</td></tr>
-<tr><td>Phase 2</td><td>345600-388799</td><td>40 WORX</td><td>90% (36 WORX)</td><td>10% (4 WORX)</td></tr>
-<tr><td>Phase 3</td><td>388800-431999</td><td>35 WORX</td><td>90% (31.5 WORX)</td><td>10% (3.5 WORX)</td></tr>
-<tr><td>Phase 4</td><td>432000-475199</td><td>30 WORX</td><td>90% (27 WORX)</td><td>10% (3 WORX)</td></tr>
-<tr><td>Phase 5</td><td>475200-518399</td><td>25 WORX</td><td>90% (22.5 WORX)</td><td>10% (2.5 WORX)</td></tr>
-<tr><td>Phase 6</td><td>518400-561599</td><td>20 WORX</td><td>90% (18 WORX)</td><td>10% (2 WORX)</td></tr>
-<tr><td>Phase 7</td><td>561600-604799</td><td>15 WORX</td><td>90% (13.5 WORX)</td><td>10% (1.5 WORX)</td></tr>
-<tr><td>Phase 8</td><td>604800-647999</td><td>10 WORX</td><td>90% (9 WORX)</td><td>10% (1 WORX)</td></tr>
-<tr><td>Phase 9</td><td>648000-1154203</td><td>5 WORX</td><td>90% (4.5 WORX)</td><td>10% (0.5 WORX)</td></tr>
-<tr><td>Phase X</td><td>1154203-∞</td><td>6 WORX</td><td>84% (5 WORX/zWORX)</td><td>16% (1 WORX)</td></tr>
+  <tr>
+    <th>Phase</th>
+    <th>Block Height</th>
+    <th>Reward</th>
+    <th>Masternodes</th>
+    <th>PoS Stakers</th>
+    <th>Treasury</th>
+  </tr>
+<tr>
+    <td>Phase 1</td>
+    <td>1431-1440</td>
+    <td>2 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Phase 2</td>
+    <td>1441-28800</td>
+    <td>4 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 3</td>
+    <td>28801-57600</td>
+    <td>8 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 4</td>
+    <td>57601-86400</td>
+    <td>12 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 5</td>
+    <td>86401-115200</td>
+    <td>16 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 6</td>
+    <td>115201-144000</td>
+    <td>20 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 7</td>
+    <td>144001-172800</td>
+    <td>24 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 8</td>
+    <td>172801-313800</td>
+    <td>10 WORX</td>
+    <td>80%</td>
+    <td>20%</td>
+       <td></td>
+  </tr>
+  <tr>
+    <td>Phase 9a/b</td>
+    <td>313801-573000</td>
+    <td>8 WORX</td>
+    <td>80%/63%</td>
+    <td>20%/27%</td>
+    <td>0%/10%</td>
+  </tr>
+   <tr>
+    <td>Phase 10</td>
+    <td>573001-1098600</td>
+    <td>6 WORX</td>
+    <td>63%</td>
+    <td>27%</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>Phase 11</td>
+    <td>1098601-4332793</td>
+    <td>3 WORX</td>
+    <td>63%</td>
+    <td>27%</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>Phase 12</td>
+    <td>4332793-end</td>
+    <td>0 WORX</td>
+    <td>63%</td>
+    <td>27%</td>
+    <td>10%</td>
+  </tr>
 </table>

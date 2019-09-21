@@ -3608,8 +3608,8 @@ https://www.transifex.com/worx-project/worx-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation>(51472 could be used only on mainnet)</translation>
+        <source>(3300 could be used only on mainnet)</source>
+        <translation>(3300 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3620,8 +3620,8 @@ https://www.transifex.com/worx-project/worx-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 51472 for mainnet)</source>
-        <translation>(deve ser 51472 para mainnet)</translation>
+        <source>(must be 3300 for mainnet)</source>
+        <translation>(deve ser 3300 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

@@ -74,7 +74,6 @@ src/qt/test/moc*.cpp
 *.trs
 *.dmg
 
-*.json.h
 *.raw.h
 
 #libtool object files
@@ -137,5 +136,3 @@ moc_*
 *.tmp
 ui_*
 build*
-worxd.*
-worxd-new-gui.*

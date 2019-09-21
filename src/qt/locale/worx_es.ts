@@ -4940,8 +4940,8 @@ Por favor espere...</translation>
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation>(51472 puede ser utilizado solo en mainnet)</translation>
+        <source>(3300 could be used only on mainnet)</source>
+        <translation>(3300 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4952,8 +4952,8 @@ Por favor espere...</translation>
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 51472 for mainnet)</source>
-        <translation>(debe ser 51472 para un mainnet)</translation>
+        <source>(must be 3300 for mainnet)</source>
+        <translation>(debe ser 3300 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

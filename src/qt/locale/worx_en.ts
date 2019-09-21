@@ -2539,7 +2539,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+7"/>
-        <source>Address: 88.26.164.88:51474</source>
+        <source>Address: 88.26.164.88:3302</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -11278,8 +11278,8 @@ WORX Core Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>(51472 could be used only on mainnet)</source>
-        <translation type="unfinished">(51472 could be used only on mainnet)</translation>
+        <source>(3300 could be used only on mainnet)</source>
+        <translation type="unfinished">(3300 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -11293,7 +11293,7 @@ WORX Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 51472 for mainnet)</source>
+        <source>(must be 3300 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

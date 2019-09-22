@@ -345,7 +345,7 @@ void MasterNodesWidget::onDeleteMNClicked(){
 
 void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
-        if(walletModel->getBalance() <= (COIN * 10000)){
+        if(walletModel->getBalance() <= (COIN * 5000)){
             inform(tr("Not enough balance to create a masternode, 10,000 WORX required."));
             return;
         }

@@ -11213,12 +11213,12 @@ WORX Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 WORX.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 WORX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 WORX.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 5000 WORX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

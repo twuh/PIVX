@@ -234,7 +234,7 @@ void PrivacyWidget::onSendClicked(){
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_17_ZEROCOIN_MAINTENANCE_MODE)) {
         warn(tr("Zerocoin"), tr("zWORX is currently undergoing maintenance"));
         return;
     }

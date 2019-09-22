@@ -380,7 +380,7 @@ bool SendWidget::sendZworx(QList<SendCoinsRecipient> recipients){
     if (!walletModel || !walletModel->getOptionsModel())
         return false;
 
-    if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
+    if(GetAdjustedTime() > GetSporkValue(SPORK_17_ZEROCOIN_MAINTENANCE_MODE)) {
         emit message(tr("Spend Zerocoin"), tr("zWORX is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }

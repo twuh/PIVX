@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SWIFTTX_H
-#define SWIFTTX_H
+#ifndef INSTANTX_H
+#define INSTANTX_H
 
 #include "base58.h"
 #include "key.h"
@@ -23,15 +23,15 @@
     ### getting 5 of 10 signatures w/ 1000 nodes of 2900
     (1000/2900.0)**5 = 0.004875397277841433
 */
-#define SWIFTTX_SIGNATURES_REQUIRED 6
-#define SWIFTTX_SIGNATURES_TOTAL 10
+#define INSTANTX_SIGNATURES_REQUIRED 6
+#define INSTANTX_SIGNATURES_TOTAL 10
 
 
 class CConsensusVote;
 class CTransaction;
 class CTransactionLock;
 
-static const int MIN_SWIFTTX_PROTO_VERSION = 70103;
+static const int MIN_INSTANTX_PROTO_VERSION = 70103;
 
 extern std::map<uint256, CTransaction> mapTxLockReq;
 extern std::map<uint256, CTransaction> mapTxLockReqRejected;

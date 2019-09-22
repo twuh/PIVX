@@ -113,6 +113,7 @@ public:
     int64_t Budget_Fee_Confirmations() const { return nBudget_Fee_Confirmations; }
 
     CBaseChainParams::Network NetworkID() const { return networkID; }
+    std::string GetDeveloperFeePayee() const { return strDeveloperFeePayee; }
 
     /** Zerocoin **/
     std::string Zerocoin_Modulus() const { return zerocoinModulus; }
@@ -200,6 +201,7 @@ protected:
     std::string strObfuscationPoolDummyAddress;
     int64_t nStartMasternodePayments;
     std::string zerocoinModulus;
+    std::string strDeveloperFeePayee;
     int nMaxZerocoinSpendsPerTransaction;
     int nMaxZerocoinPublicSpendsPerTransaction;
     CAmount nMinZerocoinMintFee;

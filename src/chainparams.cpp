@@ -170,8 +170,8 @@ public:
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 999999999; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nBlockDoubleAccumulated = 1050010;
-        nEnforceNewSporkKey = 1566860400; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1569538800; //!> Fully reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
+        nEnforceNewSporkKey = 1524488687; //!> Sporks signed after April 23, 2018 must use the new spork key
+        nRejectOldSporkKey = 1840107887; //!> Fully reject old spork key after April 23, 2028
         nBlockStakeModifierlV2 = 999999999;
         // Public coin spend enforcement
         nPublicZCSpends = 999999999;

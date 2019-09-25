@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.worx.Worxx-Qt";
+        return @"io.worx.Worx-Qt";
     } else {
         return [self __bundleIdentifier];
     }

@@ -2718,8 +2718,8 @@ Please be patient...</source>
         <translation>Nije dodijeljena adresa "Plati", stvarajući lokalnu uplatu</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Nevažeća Worxx Adresa</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Nevažeća Worx Adresa</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

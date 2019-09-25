@@ -2719,7 +2719,7 @@ Please be patient...</source>
         <translation>Не предоставляется адрес «Pay To», создающий местный платеж</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
+        <source>Invalid Worx Address</source>
         <translation>неправильный WORX адрес</translation>
     </message>
     <message>

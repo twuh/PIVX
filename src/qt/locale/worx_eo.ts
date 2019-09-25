@@ -1894,8 +1894,8 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>&lt;b&gt;malebligita&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Nevalida Worxx adreso</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Nevalida Worx adreso</translation>
     </message>
     <message>
         <source>Confirm send coins</source>

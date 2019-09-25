@@ -2767,7 +2767,7 @@ Por favor espere...</translation>
         <translation>No se especificó drección 'Pagar A', por lo que asumimos un pago local</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
+        <source>Invalid Worx Address</source>
         <translation>Dirección WORX Inválida</translation>
     </message>
     <message>

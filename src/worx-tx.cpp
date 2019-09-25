@@ -45,7 +45,7 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Worxx Core worx-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Worx Core worx-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
                                "  worx-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded worx transaction") + "\n" +
                                "  worx-tx [options] -create [commands]   " + _("Create hex-encoded worx transaction") + "\n" +

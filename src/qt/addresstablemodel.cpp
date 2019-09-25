@@ -395,7 +395,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from Worxx core
+    // Update address book model from Worx core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

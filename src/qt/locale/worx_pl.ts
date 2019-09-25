@@ -2860,8 +2860,8 @@ Proszę być cierpliwym...</translation>
         <translation>Nie podano adresu "Zapłać do", tworząc płatność lokalną</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Nieprawidłowy adres Worxx</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Nieprawidłowy adres Worx</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

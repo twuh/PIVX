@@ -2847,8 +2847,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Ongeldig Worxx addres</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Ongeldig Worx addres</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

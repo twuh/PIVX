@@ -2896,8 +2896,8 @@ Ha lite tålamod...</translation>
         <translation>Ingen 'Betala Till' adress inmatad, skapar lokal betalning</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Ogiltig Worxx Adress</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Ogiltig Worx Adress</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

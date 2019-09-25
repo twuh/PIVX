@@ -10,4 +10,4 @@ Type=Application
 Icon=worx128
 MimeType=x-scheme-handler/worx;
 Categories=Office;Finance;
-StartupWMClass=Worxx-qt
+StartupWMClass=Worx-qt

@@ -2716,7 +2716,7 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
+        <source>Invalid Worx Address</source>
         <translation>Ungültige WORX-Adresse </translation>
     </message>
     <message>

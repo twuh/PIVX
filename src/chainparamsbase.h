@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between worx-cli and worxd)
- * of a given instance of the Worxx system.
+ * of a given instance of the Worx system.
  */
 class CBaseChainParams
 {

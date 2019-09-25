@@ -2864,8 +2864,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Aucune adresse 'Payer à' de fournie, création d'un paiement local</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
-        <translation>Adresse Worxx incorrecte</translation>
+        <source>Invalid Worx Address</source>
+        <translation>Adresse Worx incorrecte</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>

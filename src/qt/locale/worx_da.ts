@@ -2734,7 +2734,7 @@ Vær tålmodig...</translation>
         <translation>Ingen 'Betal til' adresse, der er oprettet, skaber lokal betaling</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
+        <source>Invalid Worx Address</source>
         <translation> Ugyldig WORX adresse</translation>
     </message>
     <message>

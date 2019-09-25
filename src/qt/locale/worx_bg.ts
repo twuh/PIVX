@@ -255,7 +255,7 @@
     </message>
     <message>
         <source>Enter a WORX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Worxx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
+        <translation>Въведете Worx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
     </message>
     <message>
         <source>The WORX address to encrypt</source>
@@ -2709,7 +2709,7 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Worxx Address</source>
+        <source>Invalid Worx Address</source>
         <translation>Невалиден WORX адрес</translation>
     </message>
     <message>

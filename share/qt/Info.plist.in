@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.worx.Worxx-Qt</string>
+  <string>io.worx.Worx-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.worx.WorxxPayment</string>
+      <string>io.worx.WorxPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>worx</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>io.worx.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Worxx payment request</string>
+      <string>Worx payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
